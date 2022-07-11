@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="inflearn.study.login_practice">
-
-    <!--인터넷 권한 선언-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 인터넷 권한 선언 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_practice">
         <activity
+            android:name=".login_practice_mvc"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -21,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
